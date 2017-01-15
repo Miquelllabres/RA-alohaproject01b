@@ -1,0 +1,526 @@
+@charset "UTF-8";
+
+p,a,li,h5{
+	font-family: 'Raleway', sans-serif;
+	font-size: 1rem;
+}
+i{
+	margin: 0.50vh;
+	color:white;
+}
+p{
+	margin-bottom: 2vh;
+}
+br.desktop{
+	display:block; margin-top:10px; line-height:35px;
+}
+h1, h2, h3, h4{
+	font-family: 'Playfair Display', serif;
+}
+h2{
+	margin:6vh;
+}
+h4{
+	margin-bottom: 2.5vh;
+}
+h1{
+	font-size: 2.5rem;
+}
+h2 {
+	font-size: 2rem;
+}
+h3{
+	font-size: 1.5rem;
+}
+h4{
+	font-size: 1.25rem;
+}
+h5{
+	font-size: 1.25rem;
+}
+a{
+	color:white;
+}
+/****************/
+/*WIDTH SETTINGS*/
+/****************/
+.width-10{
+	width: 10%
+}
+.width-25{
+	width: 25%;	
+}
+/****************/
+/*FLOAT SETTINGS*/
+/****************/
+.right{
+	float: right;
+}
+.left{
+	float:left;
+}
+.clear{
+	clear: both;
+}
+.clearfix:after {
+	clear:both;
+	content: " ";
+	display: block;
+}
+/******************/
+/*PADDING SETTINGS*/
+/*****************/
+.top-padding{
+	padding-top: 5vh;
+}
+.bottom-padding{
+	padding-bottom: 3vh;
+}
+/*****************/
+/*MARGIN SETTINGS*/
+/*****************/
+.top{
+	margin-top:10px;
+}
+.bottom-margin-large{
+	margin-bottom: 5vh;
+}
+.margin-20{
+	margin: 5vh;
+}
+
+/*************/
+/*FOR BANNER*/
+/************/
+.banner { 
+	background: linear-gradient(rgba(0,0,0,0.4),transparent),url("images/flower-bkgd.jpg");
+	background-size: contain;
+	min-height: 70vh;
+	position: relative;
+}
+.banner-girl{
+	position: absolute;
+	background-position: top;
+	bottom: 0; left: 50%;
+	width: 20%;
+ 	height: 90%;
+ 	background-size: cover;
+ 	background-image: url("images/banner-girl.png");
+ 	background-repeat: no-repeat;
+ 	margin-left: -10%;
+  	text-align: center;
+  	z-index: 1;
+}
+.girltext1{
+	color: white;
+	padding-top: 28vh;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+ }
+.textposition{
+	margin-top: 2vh;
+	position: absolute;
+	z-index: 2;
+	width: 100%;
+	text-align: center;
+}
+.girltext2{
+	font-size: 4rem;
+	letter-spacing: 2px;
+	color: white;
+	margin-left: -10px;
+	z-index: 1;
+	text-align: center;
+	padding-top: 3vh;
+}
+/**************/
+/**NAVIGATOR**/
+/*************/
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    width: 100%;
+    
+}
+
+.flex-item {  
+    width: 10%;
+}
+.flex-item2 {
+    width: 80%;
+    padding-top: 5vh;
+}
+#navbar{
+    display: table;
+    margin: 0 auto;
+}
+
+ul.nav li{
+
+	color:red;
+	text-transform: uppercase;
+    display: inline;
+    margin: 0 3vh;
+}
+/*************/
+/****SHOP*****/
+/*************/
+.products-container {
+	display: -webkit-flex;
+   display: flex;
+   -webkit-align-items: center;
+   align-items: center;
+   -webkit-justify-content: center;
+   justify-content: center;
+   /* You can set flex-wrap and flex-direction individually */
+   -webkit-flex-direction: row;
+   flex-direction: row;
+   -webkit-flex-wrap: wrap;
+   flex-wrap: wrap;
+   /* Or do it all in one line with flex flow */
+   -webkit-flex-flow: row wrap;
+   flex-flow: row wrap;
+   /* tweak the where items line up on the row */
+   /* valid values are: flex-start, flex-end, space-between, space-around, stretch */
+   -webkit-align-content: flex-end;
+   align-content: flex-end;
+   /* display: -webkit-flex;
+    flex-wrap: wrap;
+    display: flex;*/
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 2rem;
+}
+
+.men-item {  
+
+    width: 50%;
+    height: 40vh;
+    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2),transparent),url("images/mens-category.jpg");
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+.trends-item {  
+    width: 25%;
+    height: 40vh;
+    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2),transparent),url("images/trends-category.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin:auto;
+   
+
+}
+.glasses-item {  
+    width: 25%;
+    height: 40vh;
+    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2),transparent),url("images/glasses-category.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+.sale-item {  
+    width: 25%;
+    height: 40vh;
+    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2),transparent),url("images/sale-category.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+.bags-item {  
+    width: 25%;
+    height: 40vh;
+    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2),transparent),url("images/bags-category.jpg");
+    background-size: contain;
+	background-repeat: no-repeat;
+}
+.womens-item {  
+    width: 50%;
+    height: 40vh;
+    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2),transparent),url("images/womens-category.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.text-products{
+	margin-top: 18vh;
+}
+
+
+/********/
+/*HEADER*/
+/********/
+.logos{
+	height:8vh;
+	margin:10px; 
+}
+/******************/
+/*SUBCRIPTION FORM*/
+/******************/
+#signup{
+	color: white;
+	background-image: url("images/wave-bkgd.jpg");
+	background-position:bottom;
+	background-repeat: no-repeat;
+	width: 100%;
+	min-height: 38vh;
+}
+.sub-form{
+	background-color: white;
+	border-radius: 30px;
+	padding: 2px;
+	width: 35%;
+	margin: 0 auto;
+}
+input.email{
+	font-size: 1rem;
+	background:none;
+    width: 70%;
+    min-height: 35px;
+    border: none;
+    border-radius: 30px;
+    margin-left: 15px;
+}
+input.button{
+	font-size: 1rem;
+	color: white;
+	border-radius: 30px;
+	border: none;
+    width: 25%;
+    background-color: red;
+    min-height: 35px;
+    margin-top: 1px;
+    margin-right: 2px;
+}
+/************/
+/*TEXT STYLE*/
+/************/
+.uppercase{
+	text-transform: uppercase;
+}
+.capitalize{
+	text-transform: capitalize;
+}
+.textshadow{
+	text-shadow: 1px 1px 4px dimgrey;
+}
+.font-weight{
+	font-weight: 300;
+}
+.italic{
+	font-style: italic;
+}
+.bold {
+	font-weight: bold;
+	font-style: normal;
+}
+.text-align-center{
+	text-align: center;
+}
+.text-align-left{
+	text-align: left;
+}
+
+.textdecoration{
+	text-decoration: none;
+	padding:0 10px;
+}
+.blacktext{
+	color: black;         
+}
+.dimgreytext{
+	color: dimgrey;
+}
+.greytext{
+	color: grey;
+}
+.redtext{
+	color: red;
+}
+.pricetext{
+	color: grey;
+}
+/********/
+/*FOOTER*/
+/********/
+.wrapper { 
+  overflow:hidden;
+}
+
+
+#one {
+  float:left; 
+  margin-right:20px;
+  width:50vh;
+
+}
+#two { 
+float:right;
+  overflow:hidden;
+}
+
+footer{
+	background-color:#333333;
+	color: white;
+	min-height: 30vh;
+}
+.social{
+	text-align: left;
+	margin: 5vh 5vh;
+}
+
+.mail{
+	text-decoration: underline;
+	color:white;
+	font-size: 1rem;
+}
+/********/
+/*SOCIAL*/
+/********/
+
+.pinterest{
+	width: 20px;
+}
+.instagram{
+	width:20px;
+}
+.facebook{
+	width:20px;
+}
+.twitter{
+	width: 20px;
+}
+.google{
+	width: 20px;
+}
+/*****************/
+/***RESPONVIVE***/
+/****************/
+@media screen and (max-width: 1050px)  {
+	.width-25{
+		width: 50%;
+	}
+	.banner-girl{
+		width: 40%;
+		margin-left: -22%;
+	}
+	.banner{
+		background-position: center;
+		background-size: cover;
+
+
+	}
+	.girltext1{
+		padding-top: 30vh;
+		font-size: 1.5rem;
+
+	}
+	.girltext2{
+		font-size: 4rem;
+	}
+	.textposition{
+		padding-right: 10px;
+	}
+	/*SUBSCRIBE FORM*/
+	
+	.sub-form{
+		width:80%;
+
+	}
+	#signup{
+		min-height:46vh;
+	}
+	p{
+		font-size:1rem;
+	}
+	/*PRODUCTS*/
+
+	
+}
+@media screen and (max-width: 600px)  {
+	/*FONT RULES*/
+	h2{
+		font-size: 1.75rem;
+	}
+	p{
+		font-size: 0.75rem;
+		margin-bottom: 4vh;
+	}
+	br.mobile{
+		display:none;
+	}
+	.mobile{
+		margin:5%;
+		font-size: 0.75rem;
+		line-height: 30px;
+	}
+	/*BANNER*/
+	.banner-girl {
+		width: 60%;
+		margin-left: -28%;
+		max-height: 90%;
+	}
+	.banner{
+		background-position: center;
+		background-size: cover;
+			}
+	.girltext1{
+		font-size: 1rem;
+
+	}
+
+	.girltext2{
+		font-size: 2rem;
+	}
+	/*SUBSCRIBE FORM*/
+	.sub-form{
+		width: 90%;
+	}
+	
+	#signup{
+		min-height: 49vh;
+	}
+	input.email{
+		width:60%;
+		font-size: 0.75rem;
+	}
+	input.button{
+		width:30%;
+		font-size: 0.75rem;
+	}
+	/*PRODUCTS*/
+	.width-25{
+			width: 100%;
+	}
+	
+	/*FOOTER*/
+	footer{
+		text-align: center;
+		min-height: 40vh;
+	}
+	.hide{
+		display: none;
+	}
+	.address{
+		float:right;
+		text-align: center;
+		}
+	.social{
+		margin:0 20%;
+		float: right;
+		text-align: center;
+		}
+	
+	li{	
+		width: 20%;
+		float:left;
+		text-align:center
+		}
+	.mail{
+		font-size: 0.75rem;
+	}
+	.top{
+	margin-top: 3vh;
+	}
+
+}
