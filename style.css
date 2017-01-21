@@ -168,43 +168,34 @@ a{
   
   -webkit-flex-flow: row wrap;
   flex-flow: row wrap;
+  justify-content: space-between;
 
 }
 .logo{
-  color: white;
-  font-size: 10px;
-  text-align: center;
-  width: 70%;
-  margin:0 10px;
-  padding-right: 16vh;
+  width: 20%;
 }
 .navigator{
-  color: white;
   text-align: center;
-  line-height: 30px;
+  line-height: 40px;
   width: 100%;
-  margin: 5px;
   border-top: 1px solid grey;
 }
 .cart{
-  color: white;
-  font-size: 10px;
-  text-align: center;
-  width: 15%;
+  width: 20%;
   position: relative;
-  margin-left: 2vh;
 }
 #cartQty{
 	display: none;
 	background-color: red;
-    border-radius: 20px;
-    width: 14px;
+    border-radius: 36px;
+    width: 18px;
+    height: 18px;
     border: none;
     color: white;
-    padding-left: 4px;
+    padding: 6px;
     margin-left: 5vh;
     position: absolute;
-    top: 10px;
+    top: 9px;
     left: 12px;
 }
 .logo:nth-of-type(1){
@@ -214,11 +205,11 @@ a{
 .cart:nth-of-type(3) { order: 2; }
 
 ul.nav li{
-	font-size: 10px;
+	font-size: 0.75rem;
 	color:red;
 	text-transform: uppercase;
     display: inline;
-    margin: 0 3vh;
+    margin: 0 2vh;
 }
 
 /*************/
@@ -311,7 +302,7 @@ br.desktop{
 	background-color: black;
 	color: white;
 	font-size: 0.75rem;
-	width: 80px;
+	width: 90px;
 }
 
 /****SIGNUP FORM*****/
@@ -319,10 +310,10 @@ br.desktop{
 	color: white;
 	background-image: url("images/wave-bkgd.jpg");
 	background-position:bottom;
-	background-size:310%;
-	background-repeat: no-repeat;
-	width: 100%;
-	min-height: 40vh;
+	background-size: 315%;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 40vh
 }
 
 .sub-form{
@@ -341,6 +332,7 @@ input.email{
     margin-left: 15px;
 }
 input.button{
+	-webkit-appearance: none;
 	color: white;
 	border-radius: 30px;
 	border: none;
@@ -432,11 +424,11 @@ a
 /*****HEADER****/
 #cartQty{
 	display: none;
-	width:25px;
-	height:25px;
-	padding-left: 7px;
-	font-size: 1rem;
-	top: 5px;
+	width: 27px;
+    height: 27px;
+    padding-left: 10px;
+    font-size: 1rem;
+    top: 0px;
     left: 5px;
 }
 .logos{
@@ -492,8 +484,8 @@ ul.nav li{
 	margin-bottom: 1vh;
 }
 .addtocart{
-	font-size: 1.5rem;
-	width: 150px;
+	font-size: 1.25rem;
+	width: 130px;
 }
 /*****SIGNUP****/
 #signup{
@@ -526,94 +518,41 @@ li{
 }
 
 
+
 @media screen and (min-width: 1054px) {
-
-.addtocart{
-		width: 150px;
+	p{
+		font-size: 1.5rem;
 	}
-.logo{
-	width: 5px;
+	ul.nav li{
+    margin: 0 3vh;
 }
-#cartQty{
-	 padding-left: 6px;
-    margin-left: 5vh;
-    top: -1px;
-    left: 11px;
-    width: 20px;
-    height: 20px;
-}
-.navigator{
-	width: 83%;
-}
-
-.cart{
-	width: 7%;
-	margin-left: 1vh;
-}	
-br.desktop{
-	display:initial;
-}
-ul.nav li{
-	font-size: 15px;
-    margin: 0 4vh;
-}
-
-.banner{
-	background-size: contain, 30vh 65vh,cover;
-}
-/**CATEGORY**/
-.flex-2 {
- 	height: 40vh;
-}
-.flex-1 {
-	height: 40vh;
-}
-.width-100 {
-	width: 25%;
-}
-.tablet{
-	font-size: 1.5rem;
-}
-/**SIGNUP**/
-#signup{
-	background-size: 117%;
-	min-height: 40vh;
-}
-.sub-form{
-	width: 40%;
-}
-input.email{
-	
-    width: 40%;
-    min-height: 35px;
-    
-}
-input.button{
-	
-    width: 25%;
-	min-height: 35px;
-	font-size: 0.75rem;
-}
-p{
-	font-size: 1.25rem;
-}
-
-
-	}
-@media screen and (min-width: 1240px) {
 	#cartQty{
-	padding-left: 5px;
-    top: 5px;
-    left: 8px;
-    width: 20px;
-    height: 20px;
+	padding-left: 9px;
+    top: 0px;
+    left: 2vh;
+    width: 25px;
+    height: 25px;
 }
 	.cart{
 	width: 5%;
+	padding-left: 2vh;
+	}
+	.flex-2 {
+  	height: 40vh;
+}
+	.flex-1 {
+  	height: 40vh;
+}
+	.addtocart{
+		width: 120px
+		font-size:1rem;
 	}
 	#signup{
-	background-size: 100%;
-	min-height: 36vh;
+	background-size: 120%;
+    min-height: 39vh;
+}
+.sub-form{
+	width: 50%;
 }
 
 	}
