@@ -24,6 +24,9 @@ $(document).ready(function(){
      $(".addtocart").click(function(){ //shows the input for cart quantities
     $("#cartQty").show();
 })
+     $("input.button").on("click",function() {
+         alert('Thank you for Subscribing');
+     })
  });
 
 
