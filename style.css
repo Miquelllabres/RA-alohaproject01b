@@ -201,7 +201,7 @@ header{
     height: 18px;
     border: none;
     color: white;
-    padding: 6px;
+    padding: 5px;
     margin-left: 5vh;
     position: absolute;
     top: 9px;
@@ -306,14 +306,25 @@ br.desktop{
 	display: none !important;
 }
 
+
+.addtocart:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(3px);
+}
+
 .addtocart{
 	-webkit-appearance: none;
+	cursor: pointer;
 	border: none;
 	border-radius: 20px;
 	background-color: black;
 	color: white;
 	font-size: 0.75rem;
 	width: 90px;
+	box-shadow: 0 5px #999;
+}
+.cartButton{
+	margin-bottom: 1vh;
 }
 
 /****SIGNUP FORM*****/
@@ -342,8 +353,11 @@ input.email{
     border-radius: 30px;
     margin-left: 15px;
 }
+input.button:hover {
+	background-color:#FF6666}
 input.button{
 	-webkit-appearance: none;
+	cursor: pointer;
 	color: white;
 	border-radius: 30px;
 	border: none;
@@ -508,11 +522,11 @@ ul.nav li{
 	min-height: 35vh;
 }
 input.email{
-    min-height: 50px;
+    min-height: 40px;
 }
 input.button{
 	font-size: 1rem;
-    min-height: 50px;
+    min-height: 40px;
 }
 /****FOOTER******/
 .social{
@@ -555,7 +569,8 @@ li{
 	font-size: 0.75rem;
 }
 	#cartQty{
-	padding-left: 9px;
+		font-size: 0.8rem;
+	padding-left: 8px;
     top: 0px;
     left: 2vh;
     width: 25px;
@@ -571,15 +586,23 @@ li{
 	.flex-1 {
   	height: 40vh;
 }
+	.addtocart:hover {
+	background-color: dimgrey
+}
+
+	.addtocart:active {
+  	background-color: dimgrey;
+  
+}
 	.addtocart{
 		width: 120px
 		font-size:1rem;
 	}
 	#signup{
-	background-size: 120%;
-    min-height: 39vh;
+	background-size: 110%;
+    min-height: 40vh;
 }
-.sub-form{
+	.sub-form{
 	width: 50%;
 }
 
